@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'MSDOS';
+    src: url('MSDOS.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    background: #0000a8;
+}
+
+header {
+    width: 300px;
+    position: absolute;
+    top:0;
+    left: 50%;
+    margin-left: -150px;
+    position: absolute;
+    background-color: #fff;
+}
+header h1 {
+    font-family:"MSDOS";
+    font-weight: normal;
+    color: #0000a8;
+    margin: 0 20px 0 20px;
+    font-size: 200%;
+    text-align: center;
+}
+
+.tiles {
+    display: flex;
+}
+
+.card {
+    display:inline-block;
+    height: 600px;
+    width: 25%;
+    border: solid 1px #fff;
+}
+.card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    text-align: center;
+}
+.card-image img{
+    width: 70%;
+}
+.card-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    margin: -10px 10px 0 10px;
+
+    background-color: #a8a8a8;
+    font-family: "MSDOS";
+    font-size: 500%;
+    color: black;
+}
+.card:hover .card-text{
+    transform: translate(-20px,-20px);
+    background-color: #ffff57;
+    box-shadow: 20px 20px 0 rgba(0, 0, 0, 100);
+}
+.card:active .card-text{
+    transform: translate(0px,0px);
+    background-color: #ffff57;
+    box-shadow: 0px 0px 0 rgba(0, 0, 0, 100);
+}
+
+footer {
+    display: flex;
+    font-family:"MSDOS";
+    font-size: 200%;
+    color: #fff;
+    border: solid 1px #fff;
+    padding:10px;
+}
+footer div {
+    width: 33%;
+}
+.footer-autor {
+    text-align: left;
+}
+.footer-visit {
+    text-align: center;
+}
+.visitors-counter {
+    text-align: right;
+}
+
+main {
+    margin: 20px;
+    border: solid 1px #fff;
+    box-shadow: 0 0 0 2px #0000a8, 0 0 0 4px #fff;
+}
+
+.building {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #fff;
+    font-family: "MSDOS";
+    color: white;
+}
+
+.building-hammer {
+    display: block;
+    text-align: center;
+    height: 500px;
+    width:  500px;
+    background: url(../img/hammerAnimation/hammer-iddle.png);
+    
+}
+
+.building-hammer:active {
+    background: url(../img/hammerAnimation/hammer-down.png);
+}
