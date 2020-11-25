@@ -14,151 +14,271 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
 body {  
     margin: 16px;
     background: #0000a8;
 }
 
-header {
-    display: block;
-    width: 300px;
-    position: absolute;
-    top: 5px;
-    left: 50%;
-    margin-left: -150px;
-    position: absolute;
-    background-color: #fff;
-}
-header h1 {
-    font-family:"MSDOS";
-    font-weight: normal;
-    color: #0000a8;
-    margin: 0 20px 0 20px;
-    font-size: 200%;
-    text-align: center;
-}
 
-.tile {
-    font-family: "MSDOS";
-    font-weight: normal;
-    text-align: center;
-    font-size: 100px;
+
+@media (min-width:1025px) {
+
+    header {
+        display: block;
+        width: 300px;
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        margin-left: -150px;
+        position: absolute;
+        background-color: #fff;
+    }
+    header h1 {
+        font-family:"MSDOS";
+        font-weight: normal;
+        color: #0000a8;
+        margin: 0 20px 0 20px;
+        font-size: 200%;
+        text-align: center;
+    }
     
-    display: inline-block;
-
-    border-right:2px solid #fff;
-
-    padding: 1%;
-    height: 100%;
-    width: 25%;
-}
-.last {
-    border-right:none;
-}
-.tile-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80%;
-    text-align: center;
-}
-.tile-image img{
-    width: 70%;
-}
-.tile-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20%;
-
-    background-color: #a8a8a8;
-    font-family: "MSDOS";
-    font-size: 10vh;
-    color: black;
-}
-.tile:hover .tile-text{
-    transform: translate(-20px,-20px);
-    background-color: #ffff57;
-    box-shadow: 20px 20px 0 rgba(0, 0, 0, 100);
-}
-.tile:active .tile-text{
-    transform: translate(0px,0px);
-    background-color: #ffff57;
-    box-shadow: 0px 0px 0 rgba(0, 0, 0, 100);
-}
-
-/*CONTAINERS*/
-.container1 {
-    display:block;
-    width: 100%;
-    height: 95vh;
-    padding: 3px;  
-    border: 2px solid #fff;
-    color:#0000a8;
-}
-.container2 {
-    display:block;
-    height: 100%;
-    width: 100%;
-    border: 2px solid #fff;
-    color:#0000a8;
-    box-sizing: border-box;
-}
-.container-tiles {
-    display:block;
-    border-bottom: 2px solid #fff;
-    font-size: 0;
-    height: 90%;
-    width: 100%;
-}
-/*FOOTER*/
-footer {
-    display: flex;
-    font-family:"MSDOS";
-    font-size: 5vh;
-    color: #fff;
-    padding:1%;
-}
-footer div {
-    width: 33%;
-}
-.footer-autor {
-    text-align: left;
-}
-.footer-visit {
-    text-align: center;
-}
-.visitors-counter {
-    text-align: right;
-}
-/*HAMMER*/
-.building {
-    height: 600px;
-    width: 100%;
-    font-size: 3vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "MSDOS";
-    color: white;
-}
-.building-hammer {
-    display: block;
-    text-align: center;
-    height: 500px;
-    width:  500px;
-    background: url(../img/hammerAnimation/hammer-iddle.png);
+    .tile {
+        font-family: "MSDOS";
+        font-weight: normal;
+        text-align: center;
+        font-size: 100px;
+        
+        display: inline-block;
     
-}
-.building-hammer:active {
-    background: url(../img/hammerAnimation/hammer-down.png);
-}
-/*BLOG*/
-.blog {
-    border: none;
+        border-right:2px solid #fff;
+    
+        padding: 1%;
+        height: 100%;
+        width: 25%;
+    }
+    .last {
+        border-right:none;
+    }
+    .tile-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        text-align: center;
+    }
+    .tile-image img{
+        height: 70%;
+    }
+    .tile-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20%;
+    
+        background-color: #a8a8a8;
+        font-family: "MSDOS";
+        font-size: 10vh;
+        color: black;
+    }
+    .tile:hover .tile-text{
+        transform: translate(-20px,-20px);
+        background-color: #ffff57;
+        box-shadow: 20px 20px 0 rgba(0, 0, 0, 100);
+    }
+    .tile:active .tile-text{
+        transform: translate(0px,0px);
+        background-color: #ffff57;
+        box-shadow: 0px 0px 0 rgba(0, 0, 0, 100);
+    }
+    
+    /*CONTAINERS*/
+    .container1 {
+        display:block;
+        width: 100%;
+        height: 95vh;
+        padding: 3px;  
+        border: 2px solid #fff;
+        color:#0000a8;
+    }
+    .container2 {
+        display:block;
+        height: 100%;
+        width: 100%;
+        border: 2px solid #fff;
+        color:#0000a8;
+        box-sizing: border-box;
+    }
+    .container-tiles {
+        display:block;
+        border-bottom: 2px solid #fff;
+        font-size: 0;
+        height: 90%;
+        width: 100%;
+    }
+    /*FOOTER*/
+    footer {
+        display: flex;
+        font-family:"MSDOS";
+        font-size: 5vh;
+        color: #fff;
+        padding:1%;
+    }
+    footer div {
+        width: 33%;
+    }
+    .footer-autor {
+        text-align: left;
+    }
+    .footer-visit {
+        text-align: center;
+    }
+    .visitors-counter {
+        text-align: right;
+    }
+    /*HAMMER*/
+    .building {
+        height: 600px;
+        width: 100%;
+        font-size: 3vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "MSDOS";
+        color: white;
+    }
+    .building-hammer {
+        display: block;
+        text-align: center;
+        height: 500px;
+        width:  500px;
+        background: url(../img/hammerAnimation/hammer-iddle.png);
+        
+    }
+    .building-hammer:active {
+        background: url(../img/hammerAnimation/hammer-down.png);
+    }
+    
+    /*SOCIAL*/
+    .row {
+        display:block;
+        border-bottom: 0.3vh solid #fff;
+        font-size: 0;
+        height: 50%;
+        width: 100%;
+    }
+    .second {
+        border-bottom: none;
+    }   
 }
 
-.blog-footer {
-    border: 2px solid #fff;
+@media (max-width:1025px) {
+    header {
+        display: block;
+        width: 100%;
+        background-color: #fff;
+    }
+    header h1 {
+        font-family:"MSDOS";
+        font-weight: normal;
+        color: #0000a8;
+        margin: 0 20px 0 20px;
+        font-size: 8vh;
+        text-align: center;
+    }   
+    .container1 {
+        display:block;
+        width: 100%;
+        height: fit-content;
+        padding: 0.2vh;  
+        border: 0.2vh solid #fff;
+        color:#0000a8;
+    }
+    .container2 {
+        display:block;
+        width: 100%;
+        height: fit-content;
+        border: 0.2vh solid #fff;
+        color:#0000a8;
+        box-sizing: border-box;
+        padding: 3px;
+    }
+    .container-tiles {
+        display: flex;
+        flex-direction: column;
+    }
+    .tile {
+        display: flex;
+        flex-direction: row;
+        height: 25%;
+        padding: 1vh;
+        border-bottom: 0.2vh solid #fff;
+    }
+    
+    .tile:active .tile-text{
+        transform: translate(0px,0px);
+        background-color: #ffff57;
+        box-shadow: 0px 0px 0 rgba(0, 0, 0, 100);
+    }
+    .tile-image {
+        display: block;
+        height: 20vh;
+        padding: 1vh;
+    }
+    .tile-image img {
+        height: 100%;
+    }
+    .tile-text {
+        display: flex;
+        width: 100%;
+        height: 20vh;
+    
+        align-items: center;
+        justify-content: center;
+        background-color: #a8a8a8;
+        font-family: "MSDOS";
+        font-size: 7vh;
+        color: black;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family:"MSDOS";
+        font-size: 3vh;
+        color: #fff;
+    }
+    footer div {
+        width: 100%;
+        text-align: center;
+        border-bottom: 0.2vh solid #fff;
+    }
+    .visitors-counter{
+        border: none;
+    }
+    .visitors-counter a img{
+        height: 30px;
+    }
+    /*HAMMER*/
+    .building {
+        height: 600px;
+        width: 100%;
+        font-size: 3vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "MSDOS";
+        color: white;
+    }
+    .building-hammer {
+        display: block;
+        text-align: center;
+        height: 500px;
+        width:  500px;
+        background: url(../img/hammerAnimation/hammer-iddle.png);
+        
+    }
+    .building-hammer:active {
+        background: url(../img/hammerAnimation/hammer-down.png);
+    }
 }
+
