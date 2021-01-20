@@ -1,3 +1,4 @@
-# demasscult.fun
+# demasscult.ru
+
 "VISIT"
-my website http://demasscult.fun
+my website http://demasscult.ru
